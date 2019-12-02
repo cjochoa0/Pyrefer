@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">LoginAndRegister</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="not_registered">Not Registered?</string>
+    <string name="register">REGISTER</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_registered">Already Registered?</string>
+    <string name="welcome_user">Welcome User!</string>
+    <string name="email">Email</string>
+    <string name="cancel">Cancel</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="next">Next</string>
+    <string name="getstarted">Get Started</string>
+    <string name="pyrefer">PYREFER</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="emailHint">Email</string>
+    <string name="passwordHint">Password</string>
+</resources>
