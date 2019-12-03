@@ -32,6 +32,7 @@
         android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
         android:drawableTint="#ffffff"
         android:text="@string/next"
+        android:textAppearance="@style/TextAppearance.LoginAndRegister.Button"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

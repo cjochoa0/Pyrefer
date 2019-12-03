@@ -69,6 +69,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/button_white"
             android:text="@string/login"
+            android:textAppearance="@style/TextAppearance.LoginAndRegister.Button"
             android:textColor="@color/colorPrimary" />
 
         <Button
@@ -80,6 +81,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/button_amber"
+            android:textAppearance="@style/TextAppearance.LoginAndRegister.Button"
             android:text="@string/sign_up"
             android:textColor="@color/colorWhite" />
     </RelativeLayout>

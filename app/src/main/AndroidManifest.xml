@@ -12,21 +12,30 @@
         <activity android:name=".activities.SplashScreen"
             android:theme="@style/Theme.Design.NoActionBar">
 
-        </activity>
-        <activity android:name=".activities.IntroActivity">
-
-        </activity>
-        <activity android:name=".activities.RegisterActivity"></activity>
-        <activity android:name=".activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activities.IntroActivity">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".activities.RegisterActivity"></activity>
+        <activity android:name=".activities.LoginActivity">
+
+        </activity>
         <activity android:name=".activities.HomeActivity">
 
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

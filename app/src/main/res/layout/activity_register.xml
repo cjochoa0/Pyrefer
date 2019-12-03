@@ -94,6 +94,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/button_white"
             android:text="@string/register"
+            android:textAppearance="@style/TextAppearance.LoginAndRegister.Button"
             android:textColor="@color/colorPrimary" />
 
         <Button
@@ -105,6 +106,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/button_amber"
+            android:textAppearance="@style/TextAppearance.LoginAndRegister.Button"
             android:text="@string/cancel"
             android:textColor="@color/colorWhite" />
     </RelativeLayout>
