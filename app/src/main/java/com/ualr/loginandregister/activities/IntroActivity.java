@@ -119,8 +119,8 @@ public class IntroActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 //open main activity
-                Intent mainAcitivity = new Intent(getApplicationContext(), LoginActivity.class);
-                startActivity(mainAcitivity);
+                Intent moveToLogin = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(moveToLogin);
 
                 //also we need to save boolean value to storage so next time when the user runs the app
                 // we could know that he is already checked the intro screen activity
