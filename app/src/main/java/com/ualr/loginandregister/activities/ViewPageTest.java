@@ -88,10 +88,12 @@ public class ViewPageTest extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.favorite:
                 if(p.isFavorite()){
+                    item.setIcon(R.drawable.ic_favorite_not);
                     p.setFavorite(false);
                     Toast.makeText(this, "Removed from favorites", Toast.LENGTH_SHORT).show();
                 }
                 else{
+                    item.setIcon(R.drawable.ic_favorite_black_24dp);
                     item.setIconTintMode(PorterDuff.Mode.SRC_IN);
                     p.setFavorite(true);
                     Toast.makeText(this, "Added to favorites", Toast.LENGTH_SHORT).show();

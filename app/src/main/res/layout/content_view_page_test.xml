@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/standardSpace"
         android:textSize="@dimen/pageTextSize"
-        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@drawable/button_password"
         android:text="@string/checkTest"
         android:textColor="@color/colorWhite"
         android:padding="@dimen/standardSpace"
