@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/home"/>
     <item android:id="@+id/basics"
         android:icon="@drawable/ic_basics_black_24dp"
         android:title="@string/basics"/>
     <item android:id="@+id/programming"
         android:icon="@drawable/ic_programming_black_24dp"
         android:title="@string/programming"/>
-    <item android:id="@+id/home"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/home"/>
     <item android:id="@+id/tests"
         android:icon="@drawable/ic_tests_black_24dp"
         android:title="@string/tests"/>
-    <item android:id="@+id/settings"
-        android:icon="@drawable/ic_settings_black_24dp"
-        android:title="@string/settings"/>
 </menu>

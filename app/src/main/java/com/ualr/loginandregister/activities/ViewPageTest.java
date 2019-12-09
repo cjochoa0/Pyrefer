@@ -90,15 +90,16 @@ public class ViewPageTest extends AppCompatActivity {
                 if(p.isFavorite()){
                     item.setIcon(R.drawable.ic_favorite_not);
                     p.setFavorite(false);
+                    pageDao.update(p);
                     Toast.makeText(this, "Removed from favorites", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     item.setIcon(R.drawable.ic_favorite_black_24dp);
                     item.setIconTintMode(PorterDuff.Mode.SRC_IN);
                     p.setFavorite(true);
+                    pageDao.update(p);
                     Toast.makeText(this, "Added to favorites", Toast.LENGTH_SHORT).show();
                 }
-                pageDao.update(p);
                 return true;
             case R.id.share:
                 Intent shareIntent = new Intent();

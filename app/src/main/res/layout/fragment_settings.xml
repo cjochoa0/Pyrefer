@@ -54,21 +54,21 @@
                 android:textSize="@dimen/headingTextSize" />
 
             <Button
-                android:layout_width="25dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:textSize="@dimen/plusAndMinus"
                 android:gravity="center"
                 android:text="+"
-                android:textSize="@dimen/plusAndMinus" />
+                android:layout_weight="1"/>
 
             <Button
-                android:layout_width="20dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="@dimen/standardSpace"
-                android:layout_weight="1"
+                android:textSize="@dimen/plusAndMinus"
                 android:gravity="center"
                 android:text="-"
-                android:textSize="@dimen/plusAndMinus" />
+                android:layout_weight="1" />
 
         </LinearLayout>
 

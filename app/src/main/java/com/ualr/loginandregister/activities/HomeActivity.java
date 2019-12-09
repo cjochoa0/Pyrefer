@@ -36,7 +36,6 @@ import com.ualr.loginandregister.R;
 import com.ualr.loginandregister.fragments.BasicsFragment;
 import com.ualr.loginandregister.fragments.HomeFragment;
 import com.ualr.loginandregister.fragments.ProgrammingFragment;
-import com.ualr.loginandregister.fragments.SettingsFragment;
 import com.ualr.loginandregister.fragments.TestsFragment;
 import com.ualr.loginandregister.model.HomeRecyclerViewAdapter;
 import com.ualr.loginandregister.model.Page;
@@ -45,13 +44,12 @@ import com.ualr.loginandregister.model.User;
 import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
-    private final static int NUM_PAGES = 5;
-    private final static int BASICS_FRAGMENT = 0;
-    private final static int PROGRAMMING_FRAGMENT = 1;
-    private final static int HOME_FRAGMENT = 2;
+    private final static int NUM_PAGES = 4;
+    private final static int HOME_FRAGMENT = 0;
+    private final static int BASICS_FRAGMENT = 1;
+    private final static int PROGRAMMING_FRAGMENT = 2;
     private final static int TESTS_FRAGMENT = 3;
-    private final static int SETTINGS_FRAGMENT = 4;
-    private static int lastVisited = 2;
+    private static int lastVisited = 0;
 
     public final static String CATEGORY = "category";
     public final static String TOPIC = "topic";
@@ -149,9 +147,6 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.tests:
                         viewPager.setCurrentItem(TESTS_FRAGMENT);
                         return true;
-                    case R.id.settings:
-                        viewPager.setCurrentItem(SETTINGS_FRAGMENT);
-                        return true;
                     default:
                         return false;
                 }
@@ -175,9 +170,6 @@ public class HomeActivity extends AppCompatActivity {
                         break;
                     case HOME_FRAGMENT:
                         setTitle(R.string.home);
-                        break;
-                    case SETTINGS_FRAGMENT:
-                        setTitle(R.string.settings);
                         break;
                     case TESTS_FRAGMENT:
                         setTitle(R.string.tests);
@@ -215,6 +207,7 @@ public class HomeActivity extends AppCompatActivity {
         viewPage.putExtra(PAGENAME,pageName);
 
         startActivity(viewPage);
+        onRestart();
     }
 
 
@@ -257,8 +250,6 @@ public class HomeActivity extends AppCompatActivity {
                     return new ProgrammingFragment();
                 case HOME_FRAGMENT:
                     return new HomeFragment();
-                case SETTINGS_FRAGMENT:
-                    return new SettingsFragment();
                 case TESTS_FRAGMENT:
                     return new TestsFragment();
                 default:

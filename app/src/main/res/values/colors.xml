@@ -12,11 +12,6 @@
     <color name="almostWhite">#f0f0f0</color>
     <color name="moreThanGray">#202020</color>
 
-    <!-- app/src/main/res/values/colors.xml -->
-    <color name="darkColorPrimary">#1e2756</color>
-    <color name="darkColorPrimaryDark">#141831</color>
-    <color name="darkColorAccent">#2aac4b</color>
-
     <!-- colors for button style -->
     <color name="gradient_start_color">#B37F24</color>
     <color name="gradient_end_color">#FFC866</color>

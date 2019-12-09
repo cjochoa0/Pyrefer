@@ -9,30 +9,15 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.text.TextUtils;
 import android.util.Patterns;
-import android.util.Size;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.ualr.loginandregister.Databases.PageDao;
-import com.ualr.loginandregister.Databases.PageDatabase;
-import com.ualr.loginandregister.Databases.SettingsDao;
-import com.ualr.loginandregister.Databases.SettingsDatabase;
 import com.ualr.loginandregister.Databases.UserDao;
 import com.ualr.loginandregister.Databases.UserDatabase;
 import com.ualr.loginandregister.R;
-import com.ualr.loginandregister.model.Page;
-import com.ualr.loginandregister.model.Settings;
 import com.ualr.loginandregister.model.User;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.Charset;
-import java.util.List;
-import java.util.Set;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -46,7 +31,6 @@ public class RegisterActivity extends AppCompatActivity {
     private Button registerBtn;
 
     private UserDao userDao;
-    private SettingsDao settingsDao;
 
     private ProgressDialog progressDialog;
 
@@ -81,9 +65,6 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        settingsDao = Room.databaseBuilder(this, SettingsDatabase.class, "settings_database.db")
-                .allowMainThreadQueries().build().getSettingsDao();
-
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,8 +73,6 @@ public class RegisterActivity extends AppCompatActivity {
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            Settings settings = new Settings(emailEdit.getText().toString(), passwordEdit.getText().toString());
-                            settingsDao.insert(settings);
                             User user = new User(firstNameEdit.getText().toString(),
                                             lastNameEdit.getText().toString(),
                                             emailEdit.getText().toString(),

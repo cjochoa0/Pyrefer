@@ -5,7 +5,8 @@
         android:id="@+id/favorite"
         android:title="@string/favorite"
         app:showAsAction="always"
-        android:icon="@drawable/ic_favorite_not"/>
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:iconTint="@color/colorWhite"/>
     <item
         android:id="@+id/share"
         android:title="@string/share"
