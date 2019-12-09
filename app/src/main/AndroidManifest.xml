@@ -3,15 +3,38 @@
     package="com.ualr.loginandregister">
 
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
+        android:icon="@mipmap/pyrefer_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/pyrefer_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.SplashScreen"
-            android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name=".activities.AccountSettingsActivity"
+            android:label="@string/accountSettings"
+            android:parentActivityName=".activities.HomeActivity">
+        </activity>
 
+        <activity
+            android:name=".activities.ViewPage"
+            android:label="@string/title_activity_view_page"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ualr.loginandregister.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ViewPageTest"
+            android:label="@string/title_activity_view_page_Test"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ualr.loginandregister.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SplashScreen"
+            android:theme="@style/Theme.Design.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,18 +43,14 @@
         </activity>
         <activity android:name=".activities.IntroActivity">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
-        <activity android:name=".activities.RegisterActivity"></activity>
-        <activity android:name=".activities.LoginActivity">
-
-        </activity>
-        <activity android:name=".activities.HomeActivity">
-
-        </activity>
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.HomeActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

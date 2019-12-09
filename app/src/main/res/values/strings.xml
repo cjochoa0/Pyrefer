@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LoginAndRegister</string>
+    <string name="app_name">PyRefer</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">LOGIN</string>
@@ -17,5 +17,34 @@
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="emailHint">Email</string>
-    <string name="passwordHint">Password</string>
+    <string name="passwordHint">Password (Must be at least 8 characters)</string>
+    <string name="settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="basics">Basics</string>
+    <string name="programming">Programming</string>
+    <string name="tests">Tests</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="accountSettings">Account Settings</string>
+    <string name="feedback">Feedback</string>
+    <string name="rate">Rate</string>
+    <string name="logout">Logout</string>
+    <string name="tutorials">"Learn basic knowledge of Python with beginner tutorials and slowly progress to more advances topics."</string>
+    <string name="code_examples">"See code examples from how to write the code out to how it will output in a terminal"</string>
+    <string name="exams">"Looking for questions asked concerning Python? Quiz and exam question that are frequently asked are answered for you!"</string>
+    <string name="title_activity_view_page">ViewPage</string>
+    <string name="title_activity_view_page_Test">ViewPageTest</string>
+    <string name="testHint">Enter your response here</string>
+    <string name="checkTest">Check your answer</string>
+    <string name="recent">Your Recently Viewed Pages</string>
+    <string name="favorites">Your favorite Pages</string>
+    <string name="noPages">Nothing to show here</string>
+    <string name="favorite">Favorite</string>
+    <string name="share">Share</string>
+    <string name="update">Update User Information</string>
+    <string name="changePassword">Change Password</string>
+    <string name="Dark">Dark Mode</string>
+    <string name="size">Text Size in Pages</string>
+    <string name="defaultPage">Page Displayed at Startup</string>
+
 </resources>

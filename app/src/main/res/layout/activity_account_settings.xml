@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/settingsToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_margin="@dimen/standardSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_margin="@dimen/standardSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_margin="@dimen/standardSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/saveChanges"
+        android:layout_margin="@dimen/standardSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/pageTextSize"
+        android:background="@color/colorAmber"
+        android:textColor="@color/colorWhite"
+        android:text="@string/update" />
+
+    <LinearLayout
+        android:layout_margin="@dimen/standardSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:layout_margin="@dimen/standardSpace"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_gravity="bottom"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/changePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:layout_margin="@dimen/standardSpace"
+            android:textSize="12sp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="@string/changePassword"
+            android:textColor="@color/colorWhite"
+            android:padding="@dimen/standardSpace"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</LinearLayout>

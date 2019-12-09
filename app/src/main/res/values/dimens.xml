@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="editTextWidth">194dp</dimen>
+    <dimen name="cardHeight">440dp</dimen>
+    <dimen name="headingTextSize">24sp</dimen>
+    <dimen name="pageTextSize">18sp</dimen>
+    <dimen name="navTextSize">14sp</dimen>
+    <dimen name="smallTextSize">10sp</dimen>
+    <dimen name="IconBackgroundSize">50dp</dimen>
+    <dimen name="IconSize">75dp</dimen>
+    <dimen name="largeSpace">24dp</dimen>
+    <dimen name="standardSpace">16dp</dimen>
+    <dimen name="smallSpace">10dp</dimen>
+    <dimen name="plusAndMinus">40sp</dimen>
 </resources>

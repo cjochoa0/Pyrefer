@@ -53,6 +53,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent moveToRegister = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(moveToRegister);
+                finish();
             }
         });
 
@@ -66,10 +67,11 @@ public class LoginActivity extends AppCompatActivity {
                         public void run() {
                             User user = userDao.getUser(emailEdit.getText().toString(), passwordEdit.getText().toString());
                             if(user!=null){
+                                user.setLoggedIn(true);
+                                userDao.update(user);
                                 Intent moveToHome = new Intent(LoginActivity.this, HomeActivity.class);
                                 moveToHome.putExtra("User", user);
                                 startActivity(moveToHome);
-                                finish();
                             }else {
                                 Toast.makeText(LoginActivity.this, "Unregistered User or Incorrect", Toast.LENGTH_SHORT).show();
                             }
@@ -79,6 +81,7 @@ public class LoginActivity extends AppCompatActivity {
                 } else{
                     Toast.makeText(LoginActivity.this, "Empty Fields", Toast.LENGTH_SHORT).show();
                 }
+
             }
         });
     }

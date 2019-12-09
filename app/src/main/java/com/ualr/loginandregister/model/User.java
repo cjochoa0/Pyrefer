@@ -23,12 +23,14 @@ public class User implements Serializable {
     private String lastName;
     private String email;
     private String password;
+    private boolean loggedIn;
 
     public User(String name, String lastName, String email, String password) {
         this.name = name;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
+        this.loggedIn = false;
     }
 
     @NonNull
@@ -72,6 +74,12 @@ public class User implements Serializable {
         this.password = password;
     }
 
+    public void setLoggedIn(boolean loggedIn){  this.loggedIn = loggedIn; }
+
+
+    public boolean isLoggedIn(){  return loggedIn; }
+
+
     @Override
     public String toString() {
         return "User{" +
@@ -80,6 +88,7 @@ public class User implements Serializable {
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", loggedIn='" + loggedIn + '\'' +
                 '}';
     }
 }

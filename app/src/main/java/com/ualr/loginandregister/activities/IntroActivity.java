@@ -58,9 +58,9 @@ public class IntroActivity extends AppCompatActivity {
 
         //fill list screen
         final List<ScreenItem> mList = new ArrayList<>();
-        mList.add(new ScreenItem("Tutorials", "Learn basic knowledge of Python with beginner tutorials and slowly progress to more advances topics.", R.drawable.tutorial));
-        mList.add(new ScreenItem("Code Examples", "See code examples from how to write the code out to how it will output into a complier", R.drawable.codeinjection));
-        mList.add(new ScreenItem("Exams", "Looking for questions asked concerning Python. Quiz and exam question that are frequently asked are answered for you!", R.drawable.codeex));
+        mList.add(new ScreenItem("Tutorials", getResources().getString(R.string.tutorials) , R.drawable.tutorial));
+        mList.add(new ScreenItem("Code Examples", getResources().getString(R.string.code_examples), R.drawable.codeinjection));
+        mList.add(new ScreenItem("Exams", getResources().getString(R.string.exams), R.drawable.codeex));
 
         // setup viewpager
         screenPager = findViewById(R.id.screen_viewpager);

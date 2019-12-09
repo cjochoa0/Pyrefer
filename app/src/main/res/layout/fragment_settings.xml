@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment"
+    android:background="@color/almostWhite"
+    android:id="@+id/settingsOuterLayout">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/darkLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/largeSpace"
+                android:text="@string/Dark"
+                android:textSize="@dimen/headingTextSize" />
+
+            <Switch
+                android:id="@+id/darkToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/largeSpace"
+                android:textSize="@dimen/headingTextSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sizeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/largeSpace"
+                android:layout_marginTop="@dimen/smallSpace"
+                android:layout_marginEnd="@dimen/smallSpace"
+                android:layout_marginBottom="@dimen/smallSpace"
+                android:layout_weight="1"
+                android:text="@string/size"
+                android:textSize="@dimen/headingTextSize" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/plusAndMinus"
+                android:gravity="center"
+                android:text="+"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/standardSpace"
+                android:textSize="@dimen/plusAndMinus"
+                android:gravity="center"
+                android:text="-"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/homePageLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/largeSpace"
+            android:layout_marginStart="@dimen/largeSpace"
+            android:text="@string/defaultPage"
+            android:textSize="@dimen/headingTextSize" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_margin="@dimen/largeSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</FrameLayout>

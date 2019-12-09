@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/IconSize"
+        android:layout_height="@dimen/IconSize"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@drawable/python" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/standardSpace"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <TextView
+            android:id="@+id/accountLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/standardSpace"
+            android:textColor="@android:color/white"
+            android:text="@string/app_name"
+            android:autoSizeMinTextSize="@dimen/smallTextSize"
+            android:autoSizeMaxTextSize="@dimen/headingTextSize"
+            android:autoSizeStepGranularity="1sp"/>
+        <TextView
+            android:id="@+id/accountEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="@string/app_name"
+            android:autoSizeMinTextSize="@dimen/smallTextSize"
+            android:autoSizeMaxTextSize="@dimen/headingTextSize"
+            android:autoSizeStepGranularity="1sp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

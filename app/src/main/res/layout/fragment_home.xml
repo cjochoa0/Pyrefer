@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/almostWhite"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeFragment">
+
+    <TextView
+        android:id="@+id/welcomeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standardSpace"
+        android:text="Hello World"
+        android:textColor="@color/colorAmber"
+        android:textSize="@dimen/headingTextSize" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:requiresFadingEdge="vertical"
+        android:fadingEdgeLength="@dimen/largeSpace">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cardHeight"
+                android:layout_margin="@dimen/standardSpace"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/smallSpace"
+                        android:text="@string/recent"
+                        android:textColor="@color/textColorSecondary"
+                        android:textSize="@dimen/headingTextSize" />
+
+                    <View
+                        android:id="@+id/recentsSeparator"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recentsRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/smallSpace"/>
+
+                    <TextView
+                        android:id="@+id/noRecents"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/largeSpace"
+                        android:text="@string/noPages"
+                        android:textColor="@color/textColorSecondary"
+                        android:textSize="@dimen/headingTextSize"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cardHeight"
+                android:layout_margin="@dimen/standardSpace"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/smallSpace"
+                        android:text="@string/favorites"
+                        android:textColor="@color/textColorSecondary"
+                        android:textSize="@dimen/headingTextSize" />
+
+                    <View
+                        android:id="@+id/favesSeparator"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/favesRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/smallSpace"/>
+
+                        <TextView
+                            android:id="@+id/noFavorites"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/largeSpace"
+                            android:text="@string/noPages"
+                            android:textColor="@color/textColorSecondary"
+                            android:textSize="@dimen/headingTextSize"
+                            android:visibility="gone"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
